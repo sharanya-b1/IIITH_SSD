@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<htmL>
+    <title>
+        Student Records
+    </title>
+    <header>
+        <h2>Student Records</h2>
+    </header>
+    <script>
+        function addNewRecord(){
+            var rollno = document.getElementById("roll").value;
+            var studentName = document.getElementById("sname").value;
+            var tb = document.getElementById("student_table");
+            var tbrow = document.createElement("tr");
+            // var tbrowd = document.createElement("td");
+
+            tb.innerHTML="<tr><td>"+rollno+"</td><td>"+studentName+"</td></tr>"; 
+            // tbrow.appendChild(tbrowd); // Add the roll no
+            // tbrowd.innerHTML=studentName;
+            // tbrow.appendChild(tbrowd); // Add the student name
+            tb.appendChild(tbrow);
+        }
+    </script>
+    <body>
+        <form>
+            <input id="roll" placeholder="Roll No.">
+            <input id="sname" placeholder="Student Name">
+            <button onclick="addNewRecord()" value="Get Value">Add New</button>
+        </form>
+        <table id="student_table">
+            <tr>
+                <th>Roll No.</th>
+                <th>Student Name</th>
+            </tr>
+        </table>
+        <button onclick="deleteLastRecord()">Delete Last Record</button>
+    </body>
+
+</htmL>

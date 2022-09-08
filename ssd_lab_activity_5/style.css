@@ -1,0 +1,10 @@
+#common_div {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+#username, #password, header{
+    display:block
+}
