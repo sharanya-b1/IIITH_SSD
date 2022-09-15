@@ -1,0 +1,8 @@
+#teamform {
+    display: box;
+    justify-content: left;
+}
+input {
+    padding: 5px;
+    margin: 10px;
+}

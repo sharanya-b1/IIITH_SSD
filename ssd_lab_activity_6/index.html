@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <h1 id="heading">Team Form</h1>
+        <div id="main">
+            <form>
+                <label for="managername">Manager Name</label>
+                <input type="text" id="managername">
+                <br>
+                <label for="groupemail">Group Email</label>
+                <input type="text" id="groupemail">
+                <br>
+                <label for="serverusername">Server Username</label>
+                <input type="text" id="serverusername">
+                <br>
+                <label for="serverpassword">Server Password</label>
+                <input type="password" id="serverpassword">
+                <br>
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword">
+                <br>
+                <label for="teamlead">Team Lead</label>
+                <!-- <input list="members" id="teamlead"> -->
+                <select id="teamlead" name="members">
+                    <option value="Bruce Wayne">Bruce Wayne</option>
+                    <option value="Clark Kent">Clark Kent</option>
+                    <option value="Barry Allen">Barry Allen</option>
+                    <option value="Diana">Diana</option>
+                </select>
+                <br>
+                <label for="teammembers">Team Members</label>
+                <input type="picklist" id="teammembers">
+                <br>
+                <button onclick="checkSubmit()">Submit</button>
+            </form>
+         </div>
+    </body>
+</html>
